@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <!--主体 eng-->
+    <!--主体 end-->
 
     <!--底部 start-->
     <div class="footer" style="padding-top: 46px;">
@@ -153,28 +153,26 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
   .head {
     height: 115px;
     line-height: 115px;
-  }
-
-  .head-h {
-    display: inline-block;
-    padding-left: 25px;
-    line-height: 64px;
-    border-left: 1px solid #888;
-    font-size: 26px;
-    color: #888;
-  }
-
-  .head-r {
-    font-size: 12px;
-    margin-top: 75px;
-    float: right;
-    padding-right: 85px;
-    line-height: 40px;
-    color: #ff9400;
+    &-h {
+      display: inline-block;
+      padding-left: 25px;
+      line-height: 64px;
+      border-left: 1px solid #888;
+      font-size: 26px;
+      color: #888;
+    }
+    &-r {
+      font-size: 12px;
+      margin-top: 75px;
+      float: right;
+      padding-right: 85px;
+      line-height: 40px;
+      color: #ff9400;
+    }
   }
 
   .main {
@@ -186,70 +184,67 @@
     background-repeat: no-repeat;
     height: 550px;
     width: 100%;
+    &-form {
+      position: absolute;
+      width: 330px;
+      height: 419px;
+      margin-top: 40px;
+      right: 190px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      padding: 10px 20px;
+    }
+    &-img {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      &-scan {
+        position: absolute;
+        top: 5px;
+        right: 60px;
+      }
+    }
   }
 
-  .main-form {
-    position: absolute;
-    width: 330px;
-    height: 419px;
-    margin-top: 40px;
-    right: 190px;
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    padding: 10px 20px;
+  .form {
+    &-checkbox {
+      margin: 20px 0;
+    }
+    &-footer {
+      height: 86px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #f3f3f3;
+      font-size: 12px;
+      padding: 20px;
+    }
   }
 
-  .main-img {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
-
-  .main-img-scan {
-    position: absolute;
-    top: 5px;
-    right: 60px;
-  }
-
-  .form-checkbox {
-    margin: 20px 0;
-  }
-
-  .form-footer {
-    height: 86px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #f3f3f3;
-    font-size: 12px;
-    padding: 20px;
-
-  }
-
-  .footer-partition {
-    padding: 0 5px;
-  }
-
-  .footer-img {
-    margin: 0 10px;
+  .footer {
+    &-partition {
+      padding: 0 5px;
+    }
+    &-img {
+      margin: 0 10px;
+    }
   }
 
   @media only screen and (max-width: 768px) {
     .main {
       background-image: none;
-
-    }
-
-    .main-form {
-      position:relative;
-      margin: auto;
-      margin-top: 30px;
-      right: 0;
+      &-form {
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+        right: 0;
+      }
     }
     .footer {
       display: none;
     }
-
   }
+
+
 </style>
